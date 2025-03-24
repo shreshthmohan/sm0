@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shreshth Mohan | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              mono: ["Share Tech Mono", "monospace"],
+            },
+            animation: {
+              "text-flow": "text-flow 20s linear infinite",
+              "pulse-slow": "pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+            },
+            keyframes: {
+              "text-flow": {
+                "0%, 100%": { transform: "translateX(0%)" },
+                "50%": { transform: "translateX(-15%)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+      * {
+        font-family: "Share Tech Mono", monospace;
+      }
+
+      .animate-scroll {
+        animation: scroll 30s linear infinite;
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      .forest-texture {
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      .topography {
+        background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23000000' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+      }
+    </style>
+  </head>
+  <body class="bg-white text-black min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <nav
+      class="fixed w-full px-4 py-3 flex justify-between items-center z-50 bg-white border-b border-gray-900"
+    >
+      <div class="flex gap-6">
+        <a href="">Shreshth</a>
+        <a
+          href="#generalist"
+          class="text-sm hover:underline decoration-4 underline-offset-8"
+          >Technology</a
+        >
+        <a
+          href="#outdoorsman"
+          class="text-sm hover:underline decoration-4 underline-offset-8"
+          >Outdoors</a
+        >
+        <!-- work -->
+        <a
+          href="#work"
+          class="text-sm hover:underline decoration-4 underline-offset-8"
+          >Work</a
+        >
+        <a
+          href="#philosophy"
+          class="text-sm hover:underline decoration-4 underline-offset-8"
+          >Philosophy</a
+        >
+      </div>
+    </nav>
+
+    <header class="h-screen relative overflow-hidden forest-texture bg-sky-50">
+      <div
+        class="h-full flex flex-col lg:flex-row items-center justify-center pt-16 px-8"
+      >
+        <div class="lg:mr-8 mb-6 lg:mb-0">
+          <img
+            src="shreshth-dp-manali.jpg"
+            alt="Shreshth Mohan"
+            class="rounded-full w-64 h-64 object-cover shadow-[5px_5px_0px_black]"
+          />
+        </div>
+        <div class="z-10 max-w-4xl text-center lg:text-left lg:order-1">
+          <h1 class="text-2xl md:text-4xl font-bold mb-6 leading-none">
+            Hi, I'm <br /><span class="text-4xl md:text-6xl">Shreshth</span
+            ><br />👋
+          </h1>
+          <p class="text-lg md:text-xl max-w-2xl mx-auto md:mx-0">
+            Web developer. Trail documentarian. Woodworker. Hardware designer.
+            <br />A generalist rooted in the cycles of nature.
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- technology -->
+    <!-- 1. visualations -->
+    <!-- 2. web interfaces -->
+    <section
+      id="generalist"
+      class="py-24 px-8 topography relative bg-indigo-100"
+    >
+      <div class="max-w-6xl mx-auto relative z-10">
+        <h2 class="text-5xl font-bold mb-16">Technology</h2>
+
+        <!-- Visualizations Section - Now stacked vertically -->
+        <div class="mb-20">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <!-- Visualizations Text Content -->
+            <div>
+              <div
+                class="h-64 overflow-hidden relative border-2 border-black bg-white pixel-border shadow-[3px_3px_0px_black]"
+              >
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <!-- Abstract Visualization Elements - Only grayscale circles -->
+                  <div class="relative w-full h-full">
+                    <!-- Grayscale circles of different sizes -->
+                    <div
+                      class="absolute top-1/4 left-1/4 w-16 h-16 bg-gray-300 rounded-full"
+                    ></div>
+                    <div
+                      class="absolute top-1/2 left-1/2 w-24 h-24 bg-gray-600 rounded-full"
+                    ></div>
+                    <div
+                      class="absolute top-1/3 left-1/5 w-12 h-12 bg-gray-800 rounded-full"
+                    ></div>
+                    <div
+                      class="absolute bottom-1/4 right-1/4 w-20 h-20 bg-gray-400 rounded-full"
+                    ></div>
+                    <div
+                      class="absolute top-1/6 right-1/3 w-8 h-8 bg-gray-700 rounded-full"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="text-2xl font-bold mt-6">VISUALIZATIONS</h3>
+              <p class="text-lg mt-4">
+                Translating complex systems into visual languages—revealing
+                hidden relationships like a forest floor map shows mycelial
+                networks connecting seemingly separate organisms.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <div class="border border-black p-3 bg-white">
+                <div
+                  class="h-24 mb-2 bg-gray-100 flex items-center justify-center overflow-hidden"
+                >
+                  <div class="w-full h-full relative">
+                    <!-- Gradient Force-Directed Node Spectrum visualization suggestion -->
+                    <div
+                      class="absolute inset-0 flex items-center justify-center"
+                    >
+                      <div class="w-4/5 h-4/5 relative">
+                        <div
+                          class="absolute left-0 top-1/3 w-3 h-3 bg-purple-800 rounded-full"
+                        ></div>
+                        <div
+                          class="absolute left-1/6 top-1/2 w-4 h-4 bg-purple-600 rounded-full"
+                        ></div>
+                        <div
+                          class="absolute left-1/3 top-1/3 w-6 h-6 bg-purple-400 rounded-full"
+                        ></div>
+                        <div
+                          class="absolute left-1/2 top-1/4 w-5 h-5 bg-blue-400 rounded-full"
+                        ></div>
+                        <div
+                          class="absolute left-2/3 top-1/3 w-8 h-8 bg-blue-300 rounded-full"
+                        ></div>
+                        <div
+                          class="absolute left-4/5 top-1/2 w-4 h-4 bg-orange-300 rounded-full"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="text-xs font-bold">
+                  Gradient Force-Directed Node Spectrum
+                </h4>
+              </div>
+
+              <div class="border border-black p-3 bg-white">
+                <div
+                  class="h-24 mb-2 bg-gray-100 flex items-center justify-center overflow-hidden"
+                >
+                  <div class="w-full h-full relative">
+                    <!-- Vector Flow Topology visualization suggestion -->
+                    <div
+                      class="absolute inset-0 flex items-center justify-center"
+                    >
+                      <div class="w-4/5 h-4/5 relative">
+                        <div
+                          class="absolute left-1/4 top-1/3 w-6 h-6 bg-blue-400 rounded-full"
+                        >
+                          <div
+                            class="absolute top-1/2 left-1/2 w-1 h-6 bg-black -rotate-45 origin-top"
+                          ></div>
+                        </div>
+                        <div
+                          class="absolute left-1/2 top-1/2 w-8 h-8 bg-red-400 rounded-full"
+                        >
+                          <div
+                            class="absolute top-1/2 left-1/2 w-1 h-8 bg-black rotate-12 origin-top"
+                          ></div>
+                        </div>
+                        <div
+                          class="absolute right-1/4 top-1/3 w-5 h-5 bg-blue-400 rounded-full"
+                        >
+                          <div
+                            class="absolute top-1/2 left-1/2 w-1 h-5 bg-black rotate-45 origin-top"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="text-xs font-bold">Vector Flow Topology</h4>
+              </div>
+
+              <div class="border border-black p-3 bg-white">
+                <div
+                  class="h-24 mb-2 bg-gray-100 flex items-center justify-center overflow-hidden"
+                >
+                  <div class="w-full h-full relative">
+                    <!-- Flow Intelligence Network visualization suggestion -->
+                    <div
+                      class="absolute inset-0 flex items-center justify-center"
+                    >
+                      <div class="w-4/5 h-4/5 relative">
+                        <div
+                          class="absolute left-0 top-1/2 h-4 w-full bg-gradient-to-r from-purple-700 to-blue-500"
+                        ></div>
+                        <div
+                          class="absolute left-1/3 top-1/4 h-3 w-2/3 bg-gradient-to-r from-blue-500 to-cyan-400"
+                        ></div>
+                        <div
+                          class="absolute left-1/2 top-3/4 h-2 w-1/2 bg-gradient-to-r from-blue-500 to-green-400"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="text-xs font-bold">Flow Intelligence Network</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visualization projects on desktop -->
+        </div>
+
+        <!-- Web Interfaces Section - Now below Visualizations -->
+        <div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:gap-12 gap-6 items-center"
+          >
+            <!-- Web Interfaces Text Content -->
+
+            <div>
+              <h3 class="text-2xl font-bold">WEB INTERFACES</h3>
+              <p class="text-lg mt-4">
+                Crafting digital environments that respond like well-worn
+                trails—requiring minimal effort while revealing possibilities
+                through careful observation of human movement patterns.
+              </p>
+            </div>
+
+            <!-- Web Interfaces Card -->
+          </div>
+
+          <!-- Web interface projects -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div class="border border-black p-4 bg-white">
+              <div
+                class="h-40 mb-3 bg-gray-100 flex items-center justify-center"
+              >
+                <img
+                  src="/api/placeholder/300/200"
+                  alt="Arcade Zero Project"
+                  class="object-cover h-full w-full"
+                />
+              </div>
+              <h4 class="text-lg font-bold">Arcade Zero</h4>
+              <p class="text-sm mt-2">
+                A digital space designed around the principles of regenerative
+                attention—inviting users into a rhythm of engagement that
+                mirrors natural cycles rather than exploiting dopamine pathways.
+              </p>
+            </div>
+
+            <div class="border border-black p-4 bg-white">
+              <div
+                class="h-40 mb-3 bg-gray-100 flex items-center justify-center"
+              >
+                <img
+                  src="/api/placeholder/300/200"
+                  alt="BLR Hikes Project"
+                  class="object-cover h-full w-full"
+                />
+              </div>
+              <h4 class="text-lg font-bold">blrhikes.com</h4>
+              <p class="text-sm mt-2">
+                A trail documentation platform that weaves digital wayfinding
+                with ecological awareness—helping urban dwellers discover nearby
+                wilderness while fostering responsible relationship with living
+                landscapes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- work  -->
+    <!-- 1. force simulation viz -->
+    <!-- 2. blr hikes - hiking community and off-beat trail database -->
+    <!-- 3. arcade zero -->
+
+    <!-- outdoors -->
+    <!-- 1. -->
+  </body>
+</html>
