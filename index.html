@@ -65,30 +65,30 @@
         <a
           href="#tech"
           class="text-sm hover:underline decoration-4 underline-offset-8"
-          >Technology</a
+          >Tech</a
         >
         <a
           href="#out"
           class="text-sm hover:underline decoration-4 underline-offset-8"
-          >Outdoors</a
+          >Out</a
         >
         <a
           href="#philosophy"
           class="text-sm hover:underline decoration-4 underline-offset-8"
-          >Philosophy</a
+          >Phil</a
         >
       </div>
     </nav>
 
     <header class="h-screen relative overflow-hidden forest-texture bg-sky-50">
       <div
-        class="h-full flex flex-col lg:flex-row items-center justify-center pt-16 px-8 max-w-3xl mx-auto"
+        class="h-full flex flex-col lg:flex-row items-center justify-center px-8 max-w-3xl mx-auto"
       >
         <div class="flex-shrink-0 lg:mr-8 mb-6 lg:mb-0">
           <img
             src="shreshth-dp-manali.jpg"
             alt="Shreshth Mohan"
-            class="rounded-full w-64 h-64 object-cover shadow-[5px_5px_0px_black]"
+            class="rounded-full md:w-64 md:h-64 w-48 h-48 object-cover shadow-[5px_5px_0px_black]"
             loading="lazy"
           />
         </div>
@@ -100,11 +100,11 @@
           <p class="text-lg md:text-xl max-w-2xl mx-auto md:mx-0">
             I have scoured the internet and the outdoors for more than a decade.
           </p>
-          <p class="text-lg md:text-xl max-w-2xl mx-auto md:mx-0 mt-6">
+          <p class="text-lg md:text-xl max-w-2xl mx-auto md:mx-0 md:mt-6 mt-4">
             And I translate that into the digital interfaces I build.
           </p>
 
-          <p class="text-lg md:text-xl max-w-2xl mx-auto md:mx-0 mt-6">
+          <p class="text-lg md:text-xl max-w-2xl mx-auto md:mx-0 md:mt-6 mt-4">
             I also explore and document off-beat trails.
           </p>
         </div>
@@ -113,12 +113,15 @@
     <!-- technology -->
     <!-- 1. visualations -->
     <!-- 2. web interfaces -->
-    <section id="tech" class="py-24 px-6 topography relative bg-stone-100">
+    <section
+      id="tech"
+      class="py-12 md:py-24 px-6 topography relative bg-stone-100"
+    >
       <div class="max-w-3xl mx-auto relative z-10">
-        <h2 class="text-5xl font-bold mb-16">Technology</h2>
+        <h2 class="text-5xl font-bold md:mb-16 md:mb-10">Technology</h2>
 
         <!-- Visualizations Section - Now stacked vertically -->
-        <div class="mb-20">
+        <div class="mb-10 md:mb-20">
           <div>
             <!-- Visualizations Text Content -->
             <div>
@@ -128,74 +131,97 @@
                 hidden relationships in data.
               </p>
             </div>
-            <div class="space-y-12 mt-12">
-              <div
-                class="border-2 border-[#532788] p-6 bg-white shadow-[5px_5px_0px_#532788]"
+            <div class="space-y-8 md:space-y-12 mt-8 md:mt-12">
+              <a
+                href="https://data-viz-d3.shreshth.dev/taxes/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block group"
               >
-                <h4 class="font-bold text-xl mb-2">
-                  Gradient Force-Directed Node Spectrum
-                </h4>
                 <div
-                  class="mb-2 bg-gray-100 flex items-center justify-center overflow-hidden"
+                  class="border-2 border-[#532788] p-4 md:p-6 bg-white shadow-[5px_5px_0px_#532788] transition-all duration-300 group-hover:translate-y-[-2px] group-hover:translate-x-[-2px] group-hover:shadow-[7px_7px_0px_#532788] group-hover:bg-[#fcfaff] group-active:translate-y-[0px] group-active:translate-x-[0px] group-active:shadow-[3px_3px_0px_#532788]"
                 >
-                  <img
-                    src="taxes.jpg"
-                    alt=""
-                    class="object-cover"
-                    loading="lazy"
-                  />
-                  <div class="w-full h-full relative">
-                    <!-- Gradient Force-Directed Node Spectrum visualization suggestion -->
-                    <div
-                      class="absolute inset-0 flex items-center justify-center"
-                    ></div>
+                  <h4 class="font-bold text-lg md:text-xl mb-2">
+                    Gradient Force-Directed Node Spectrum
+                  </h4>
+                  <div
+                    class="mb-2 bg-gray-100 flex items-center justify-center overflow-hidden"
+                  >
+                    <img
+                      src="taxes.jpg"
+                      alt=""
+                      class="object-cover"
+                      loading="lazy"
+                    />
+                    <div class="w-full h-full relative">
+                      <!-- Gradient Force-Directed Node Spectrum visualization suggestion -->
+                      <div
+                        class="absolute inset-0 flex items-center justify-center"
+                      ></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="border-2 border-[#00abcf] p-6 bg-white shadow-[5px_5px_0px_#00abcf]"
+              </a>
+              <a
+                href="https://data-viz-d3.shreshth.dev/happiness/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block group"
               >
-                <h4 class="font-bold text-xl mb-2">Vector Flow Topology</h4>
                 <div
-                  class="mb-2 bg-gray-100 flex items-center justify-center overflow-hidden"
+                  class="border-2 border-[#00abcf] p-4 md:p-6 bg-white shadow-[5px_5px_0px_#00abcf] transition-all duration-300 group-hover:translate-y-[-2px] group-hover:translate-x-[-2px] group-hover:shadow-[7px_7px_0px_#00abcf] group-hover:bg-[#fcfaff] group-active:translate-y-[0px] group-active:translate-x-[0px] group-active:shadow-[3px_3px_0px_#00abcf]"
                 >
-                  <img
-                    src="happiness.jpg"
-                    alt=""
-                    class="object-cover"
-                    loading="lazy"
-                  />
-                  <div class="w-full h-full relative">
-                    <!-- Gradient Force-Directed Node Spectrum visualization suggestion -->
-                    <div
-                      class="absolute inset-0 flex items-center justify-center"
-                    ></div>
+                  <h4 class="font-bold text-lg md:text-xl mb-2">
+                    Vector Flow Topology
+                  </h4>
+                  <div
+                    class="mb-2 bg-gray-100 flex items-center justify-center overflow-hidden"
+                  >
+                    <img
+                      src="happiness.jpg"
+                      alt=""
+                      class="object-cover"
+                      loading="lazy"
+                    />
+                    <div class="w-full h-full relative">
+                      <!-- Gradient Force-Directed Node Spectrum visualization suggestion -->
+                      <div
+                        class="absolute inset-0 flex items-center justify-center"
+                      ></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="border-2 border-[#9567bc] p-6 bg-white shadow-[5px_5px_0px_#9567bc]"
+              </a>
+              <a
+                href="https://data-viz-d3.shreshth.dev/sankey/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block group"
               >
-                <h4 class="font-bold text-xl mb-2">
-                  Flow Intelligence Network
-                </h4>
                 <div
-                  class="mb-2 bg-gray-100 flex items-center justify-center overflow-hidden"
+                  class="border-2 border-[#9567bc] p-4 md:p-6 bg-white shadow-[5px_5px_0px_#9567bc] transition-all duration-300 group-hover:translate-y-[-2px] group-hover:translate-x-[-2px] group-hover:shadow-[7px_7px_0px_#9567bc] group-hover:bg-[#fcfaff] group-active:translate-y-[0px] group-active:translate-x-[0px] group-active:shadow-[3px_3px_0px_#9567bc]"
                 >
-                  <img
-                    src="sankey.jpg"
-                    alt=""
-                    class="object-cover"
-                    loading="lazy"
-                  />
-                  <div class="w-full h-full relative">
-                    <!-- Gradient Force-Directed Node Spectrum visualization suggestion -->
-                    <div
-                      class="absolute inset-0 flex items-center justify-center"
-                    ></div>
+                  <h4 class="font-bold text-lg md:text-xl mb-2">
+                    Flow Intelligence Network
+                  </h4>
+                  <div
+                    class="mb-2 bg-gray-100 flex items-center justify-center overflow-hidden"
+                  >
+                    <img
+                      src="sankey.jpg"
+                      alt=""
+                      class="object-cover"
+                      loading="lazy"
+                    />
+                    <div class="w-full h-full relative">
+                      <!-- Gradient Force-Directed Node Spectrum visualization suggestion -->
+                      <div
+                        class="absolute inset-0 flex items-center justify-center"
+                      ></div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
@@ -218,10 +244,10 @@
                 href="https://blrhikes.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="block"
+                class="block group"
               >
                 <div
-                  class="border-2 border-[#698f32] bg-white flex flex-col md:flex-row gap-4 shadow-[3px_3px_0px_#698f32]"
+                  class="border-2 border-[#698f32] bg-white flex flex-col md:flex-row gap-4 shadow-[3px_3px_0px_#698f32] transition-all duration-300 group-hover:translate-y-[-2px] group-hover:translate-x-[-2px] group-hover:shadow-[5px_5px_0px_#698f32] group-hover:bg-[#fcfeff] group-active:translate-y-[0px] group-active:translate-x-[0px] group-active:shadow-[2px_2px_0px_#698f32]"
                 >
                   <div
                     class="h-40 md:h-64 bg-gray-100 flex items-center justify-center md:w-1/2"
@@ -232,9 +258,9 @@
                       class="object-cover h-full w-full"
                     />
                   </div>
-                  <div class="md:w-1/2 pt-0 p-4 md:pt-4">
-                    <h4 class="text-lg font-bold">blrhikes.com</h4>
-                    <p class="text-sm mt-2">
+                  <div class="md:w-1/2 pt-0 p-4 md:pt-8 md:p-6">
+                    <h4 class="text-3xl font-bold">blrhikes.com</h4>
+                    <p class="text-lg mt-2 md:mt-4">
                       A Bangalore-based Hiking community of outdoor enthusiasts
                       who explore off-beat trails and share skills to better
                       navigate the natural world.
@@ -246,10 +272,10 @@
                 href="https://arcade.sm0l.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="block"
+                class="block group"
               >
                 <div
-                  class="border-2 border-[#b91c1b] bg-white flex flex-col md:flex-row gap-4 shadow-[3px_3px_0px_#b91c1b]"
+                  class="border-2 border-[#b91c1b] bg-white flex flex-col md:flex-row gap-4 shadow-[3px_3px_0px_#b91c1b] transition-all duration-300 group-hover:translate-y-[-2px] group-hover:translate-x-[-2px] group-hover:shadow-[5px_5px_0px_#b91c1b] group-hover:bg-[#fcfeff] group-active:translate-y-[0px] group-active:translate-x-[0px] group-active:shadow-[2px_2px_0px_#b91c1b]"
                 >
                   <div
                     class="h-40 md:h-64 bg-gray-100 items-center justify-center md:w-1/2"
@@ -260,9 +286,9 @@
                       class="object-cover h-full w-full"
                     />
                   </div>
-                  <div class="md:w-1/2 pt-0 p-4 md:pt-4">
-                    <h4 class="text-lg font-bold">Arcade Zero</h4>
-                    <p class="text-sm mt-2">
+                  <div class="md:w-1/2 pt-0 p-4 md:pt-8 md:p-6">
+                    <h4 class="text-3xl font-bold">Arcade Zero</h4>
+                    <p class="text-lg mt-2 md:mt-4">
                       A visual wiki of retro gaming trivia that maps the
                       pixelated landscapes of nostalgia, connecting gamers
                       through shared digital memories.
@@ -278,74 +304,94 @@
     <!-- bg-gradient-to-b from-sky-100 via-lime-100 to-amber-100 -->
     <section
       id="out"
-      class="py-24 px-6 bg-gradient-to-b from-stone-50 to-stone-100 text-stone-800"
+      class="py-12 md:py-24 px-6 bg-gradient-to-b from-stone-50 to-stone-100 text-stone-800"
     >
       <div class="max-w-3xl mx-auto">
         <h2 class="text-5xl font-bold mb-6">Outdoors</h2>
-        <p class="mb-12">
-          I love spending outdoors and exposing others to our natural
-          surroundings. With my work in the outdoors I intend to make people be
-          more considerate of our surroundings and be more aware of our wild
-          friends that reside in them.
+        <p class="mb-12 text-lg md:text-xl">
+          I love connecting people with nature, helping them develop awareness
+          and respect for our wild surroundings and the creatures that call them
+          home.
         </p>
 
         <div class="space-y-8">
-          <div
-            class="border-2 border-black flex flex-col bg-gradient-to-b from-lime-100 to-lime-50 shadow-[5px_5px_0px_black]"
+          <a
+            href="https://blrhikes.com/trails"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block group"
           >
-            <div class="flex-col md:flex-row flex">
-              <img class="md:w-1/2 w-full" src="trail-map.jpg" alt="" />
-              <div class="md:flex flex-col justify-between object-cover p-6">
-                <h3 class="text-xl md:text-3xl font-bold mb-4">
-                  Documentation
-                </h3>
-                <p class="text-sm">
-                  Recording paths not as lines on maps but as stories etched in
-                  earth, each trail a relationship between human passage and
-                  landscape response.
-                </p>
-                <div class="self-end mt-4 w-16 h-1 bg-lime-600"></div>
+            <div
+              class="border-2 border-black flex flex-col bg-gradient-to-b from-lime-100 to-lime-50 shadow-[5px_5px_0px_black] transition-all duration-300 group-hover:translate-y-[-2px] group-hover:translate-x-[-2px] group-hover:shadow-[7px_7px_0px_black] group-hover:from-lime-50 group-hover:to-lime-100 group-active:translate-y-[1px] group-active:translate-x-[1px] group-active:shadow-[3px_3px_0px_black]"
+            >
+              <div class="flex-col md:flex-row flex">
+                <img class="md:w-1/2 w-full" src="trail-map.jpg" alt="" />
+                <div class="md:flex flex-col justify-between object-cover p-6">
+                  <h3 class="text-xl md:text-3xl font-bold mb-4">
+                    Documentation
+                  </h3>
+                  <p class="text-sm">
+                    Recording paths not as lines on maps but as stories etched
+                    in earth, each trail a relationship between human passage
+                    and landscape response.
+                  </p>
+                  <div class="self-end mt-4 w-16 h-1 bg-lime-600"></div>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="border-2 border-black p-4 md:p-6 flex flex-col bg-gradient-to-b from-sky-100 to-sky-50 shadow-[5px_5px_0px_black]"
+          </a>
+          <a
+            href="https://blrhikes.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block group"
           >
-            <h3 class="text-xl md:text-3xl font-bold mb-4">Community</h3>
-            <div class="flex-col md:flex-row flex gap-6">
-              <img class="md:w-1/2 w-full" src="community.jpg" alt="" />
-              <div class="md:flex flex-col justify-between object-cover">
-                <p class="text-sm">
-                  Facilitating connections between people and place—creating
-                  ecosystems of knowledge where skills flow like nutrients
-                  through mycorrhizal networks.
-                </p>
-                <div class="self-end mt-4 w-16 h-1 bg-sky-600"></div>
+            <div
+              class="border-2 border-black flex flex-col bg-gradient-to-b from-sky-100 to-sky-50 shadow-[5px_5px_0px_black] transition-all duration-300 group-hover:translate-y-[-2px] group-hover:translate-x-[-2px] group-hover:shadow-[7px_7px_0px_black] group-hover:from-sky-50 group-hover:to-sky-100 group-active:translate-y-[1px] group-active:translate-x-[1px] group-active:shadow-[3px_3px_0px_black]"
+            >
+              <div class="flex-col md:flex-row flex">
+                <img class="md:w-1/2 w-full" src="community.jpg" alt="" />
+                <div class="md:flex flex-col justify-between object-cover p-6">
+                  <h3 class="text-xl md:text-3xl font-bold mb-4">Community</h3>
+                  <p class="text-sm">
+                    Facilitating connections between people and place—creating
+                    ecosystems of knowledge where skills flow like nutrients
+                    through mycorrhizal networks.
+                  </p>
+                  <div class="self-end mt-4 w-16 h-1 bg-sky-600"></div>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="border-2 border-black p-4 md:p-6 flex flex-col bg-gradient-to-b from-amber-100 to-amber-50 shadow-[5px_5px_0px_black]"
+          </a>
+          <a
+            href="https://blrhikes.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block group"
           >
-            <h3 class="text-xl md:text-3xl font-bold mb-4">
-              Outdoor Education
-            </h3>
-            <div class="flex-col md:flex-row flex gap-6">
-              <img
-                class="md:w-1/2 w-full"
-                src="teaching-navigation.jpg"
-                alt=""
-              />
-              <div class="md:flex flex-col justify-between object-cover">
-                <p class="text-sm">
-                  Guiding others not just through space but through
-                  perception—teaching how to read landscapes as living documents
-                  written in stone, water, and light.
-                </p>
-                <div class="self-end mt-4 w-16 h-1 bg-amber-600"></div>
+            <div
+              class="border-2 border-black flex flex-col bg-gradient-to-b from-amber-100 to-amber-50 shadow-[5px_5px_0px_black] transition-all duration-300 group-hover:translate-y-[-2px] group-hover:translate-x-[-2px] group-hover:shadow-[7px_7px_0px_black] group-hover:from-amber-50 group-hover:to-amber-100 group-active:translate-y-[1px] group-active:translate-x-[1px] group-active:shadow-[3px_3px_0px_black]"
+            >
+              <div class="flex-col md:flex-row flex">
+                <img
+                  class="md:w-1/2 w-full"
+                  src="teaching-navigation.jpg"
+                  alt=""
+                />
+                <div class="md:flex flex-col justify-between object-cover p-6">
+                  <h3 class="text-xl md:text-3xl font-bold mb-4">
+                    Outdoor Education
+                  </h3>
+                  <p class="text-sm">
+                    Guiding others not just through space but through
+                    perception—teaching how to read landscapes as living
+                    documents written in stone, water, and light.
+                  </p>
+                  <div class="self-end mt-4 w-16 h-1 bg-amber-600"></div>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
 
         <div class="mt-12 flex justify-center">
@@ -380,69 +426,7 @@
         </div>
       </div>
     </section>
-    <section id="philosophy" class="py-24 px-8">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-5xl font-bold mb-16">Philosophy</h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-          <div>
-            <blockquote
-              class="text-3xl font-bold mb-8 border-l-4 border-black pl-6"
-            >
-              "Only do how much is needed, not more not less."
-            </blockquote>
-            <p class="text-lg">
-              Like a river seeking its path of least resistance, true efficiency
-              comes not from maximizing effort but from finding the natural flow
-              of each task. When we observe carefully before acting, we discover
-              the minimal intervention needed—a principle seen in every mature
-              ecosystem where energy is never wasted.
-            </p>
-          </div>
-
-          <div class="space-y-4">
-            <div
-              class="border-2 border-black p-4 flex flex-col bg-white shadow-[3px_3px_0px_black]"
-            >
-              <h3 class="text-xl font-bold mb-2">SLOW DOWN</h3>
-              <p class="text-sm mb-auto">
-                Time moves at the pace of attention. When we slow down, we
-                notice the subtle patterns that govern both landscapes and
-                ourselves.
-              </p>
-            </div>
-            <div
-              class="border-2 border-black p-4 flex flex-col bg-white shadow-[3px_3px_0px_black]"
-            >
-              <h3 class="text-xl font-bold mb-2">CYCLICAL THINKING</h3>
-              <p class="text-sm mb-auto">
-                All human endeavors exist within natural cycles. Align with them
-                rather than fighting against their inherent wisdom.
-              </p>
-            </div>
-            <div
-              class="border-2 border-black p-4 flex flex-col bg-white shadow-[3px_3px_0px_black]"
-            >
-              <h3 class="text-xl font-bold mb-2">BOUNDARY EXPLORATION</h3>
-              <p class="text-sm mb-auto">
-                Growth happens at edges—the ecotone between forest and field,
-                between comfort and challenge, between knowing and mystery.
-              </p>
-            </div>
-            <div
-              class="border-2 border-black p-4 flex flex-col bg-white shadow-[3px_3px_0px_black]"
-            >
-              <h3 class="text-xl font-bold mb-2">HAND KNOWLEDGE</h3>
-              <p class="text-sm mb-auto">
-                Making with hands connects mind to matter, restoring our
-                relationship with the physical world that sustains us.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="connect" class="py-24 px-8 bg-stone-100 pb-48">
+    <section id="connect" class="py-24 px-8 bg-zinc-200 pb-48">
       <div class="max-w-3xl mx-auto">
         <h2 class="text-5xl font-bold mb-16">Connect</h2>
 
@@ -453,26 +437,25 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div
-            class="border-2 border-black p-4 flex flex-col bg-white shadow-[3px_3px_0px_black]"
+            class="border-2 border-black p-4 flex flex-col bg-white shadow-[3px_3px_0px_black] transition-all duration-300 hover:translate-y-[-2px] hover:translate-x-[-2px] hover:shadow-[5px_5px_0px_black] hover:bg-gray-50 active:translate-y-[1px] active:translate-x-[1px] active:shadow-[1px_1px_0px_black]"
           >
             <h3 class="text-xl font-bold mb-2">Email</h3>
-            <p class="text-sm mb-auto">
-              <a href="mailto:shreshthmohan@hey.com">shreshthmohan@hey.com</a>
-            </p>
+            <p class="text-sm mb-auto">shreshthmohan@hey.com</p>
           </div>
-          <div
-            class="border-2 border-black p-4 flex flex-col bg-white shadow-[3px_3px_0px_black]"
+
+          <a
+            href="https://x.com/shreshthmohan"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group"
           >
-            <h3 class="text-xl font-bold mb-2">Twitter</h3>
-            <p class="text-sm mb-auto">
-              <a
-                href="https://x.com/shreshthmohan"
-                target="_blank"
-                rel="noopener noreferrer"
-                >@shreshthmohan</a
-              >
-            </p>
-          </div>
+            <div
+              class="border-2 border-black p-4 flex flex-col bg-white shadow-[3px_3px_0px_black] transition-all duration-300 group-hover:translate-y-[-2px] group-hover:translate-x-[-2px] group-hover:shadow-[5px_5px_0px_black] group-hover:bg-gray-50 group-active:translate-y-[1px] group-active:translate-x-[1px] group-active:shadow-[1px_1px_0px_black]"
+            >
+              <h3 class="text-xl font-bold mb-2">Twitter</h3>
+              <p class="text-sm mb-auto">@shreshthmohan</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -480,18 +463,17 @@
       class="py-6 px-4 sm:px-6 md:px-8 border-t border-gray-400 dark:border-gray-600"
     >
       <div
-        class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0"
+        class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0"
       >
         <!-- Logo/Built with section -->
-        <div class="text-gray-600 dark:text-gray-400 text-xs flex items-center">
+        <div class="text-gray-600 dark:text-gray-400 flex items-center">
           <span>Inspired by </span>
           <a
             href="https://layogtima.com/mono/"
             target="_blank"
             class="font-mono font-bold tracking-tight ml-2 relative group"
           >
-            <span
-              class="transition-colors duration-300 group-hover:text-black dark:group-hover:text-white"
+            <span class="transition-colors duration-300 group-hover:text-black"
               >MONO</span
             >
             <span
@@ -503,20 +485,18 @@
         <!-- Copyleft section -->
         <div class="flex items-center gap-4">
           <div
-            class="text-xs text-gray-600 dark:text-gray-400 block sm:flex text-center items-center gap-2"
+            class="text-gray-600 dark:text-gray-400 block sm:flex text-center items-center gap-2"
           >
-            <span class="inline-block transform rotate-180 text-lg mb-2"
-              >©</span
-            >
+            <span class="inline-block transform rotate-180 mb-2">©</span>
             <span>
-              Copyleft 2025 -
+              Copyleft 2025
               <a
                 target="_blank"
                 href="https://github.com/shreshthmohan/sm0"
                 class="relative inline-block group"
               >
                 <span
-                  class="transition-colors duration-300 group-hover:text-black dark:group-hover:text-white"
+                  class="transition-colors duration-300 group-hover:text-black"
                   >Seek. Settle. Sustain.</span
                 >
                 <span
